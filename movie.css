@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: var(--card-bg);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 12px;
+}
+
+header h1 {
+  font-size: 1.8em;
+  color: #007bff;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+#movieResult {
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#movieResult img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#loading {
+  font-style: italic;
+  margin-top: 15px;
+}
+
+#errorMessage {
+  background-color: #ffe6e6;
+  color: #b00020;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+#historySection ul li {
+  padding: 8px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#historySection ul li:hover {
+  background-color: #ddd;
+}
+
+/* Dark mode */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --button-bg: #4CAF50;
+  --error-bg: #ff4c4c;
+}

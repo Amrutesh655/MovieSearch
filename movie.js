@@ -1,4 +1,3 @@
-// Movie Search App - Pure JavaScript with React
 const { useState, useEffect, useCallback } = React;
 
 // API Configuration
